@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<button onclick="myFunction()">Klikni me!</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var ime=prompt("Ako imamo jednu kantu sa 2 litre vode i drugu kantu sa 5 litara vode i jednu kornjacu, koliko kanti imam?","Upisi broj")
+    if(ime==2){
+		document.getElementById("demo").innerHTML=
+		"BRAVO! Odgovor je tocan!"
+		}
+	else if(ime==1){
+		document.getElementById("demo").innerHTML = 
+		"Odgovor je netocan. Toliko imamo kornjaca. Pokusaj ponovno...";
+		}
+	else if(ime==7){
+		document.getElementById("demo").innerHTML = 
+		"Odgovor je netocan. Toliko imamo litara vode. Pokusaj ponovno...";
+		}
+	else{
+		document.getElementById("demo").innerHTML = 
+		"Odgovor je netocan. Ne znam kako si dosao do ovog rijesenja... Pokusaj ponovno...";
+		}
+	
+}
+</script>
+
+</body>
+</html>
