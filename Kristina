@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Unos teksta!</p>
+
+<button onclick="myFunction()">Idemo probati!</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var person = prompt("Unesite ime", "Ime Prezime");
+    if (person != null) {
+        document.getElementById("demo").innerHTML =
+        "Bok " + person + "! Kako si danas?";
+    }
+}
+</script>
+
+</body>
+</html>
